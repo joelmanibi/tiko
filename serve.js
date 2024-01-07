@@ -26,6 +26,8 @@ require('./src/routes/auth/auth-partner.route')(app);
 require('./src/routes/manage-partner/station.route')(app);
 require('./src/routes/manage-partner/bus.route')(app);
 require('./src/routes/manage-partner/trip.route')(app);
+require('./src/routes/manage-partner/departure.route')(app);
+require('./src/routes/customer-request/departure.route')(app);
 
 // set port
 const PORT = process.env.PORT || 8000;

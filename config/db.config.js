@@ -4,13 +4,12 @@ module.exports = {
      USER: "u405557378_tiko",
        PASSWORD: "Adm3Pl2*",
      DB: "u405557378_tiko",
-       // USER: "u225872299_tc",
-       // PASSWORD: "Adm3Pl2****",
-       // DB: "u405557378_oeufivoire",
+       
      //   HOST: "localhost",
-      //  USER: "root",
-       // PASSWORD: " ",
-       // DB: "tiko",
+     //   USER: "root",
+     //   PASSWORD: " ",
+    //    DB: "tiko",
+
         dialect: "mysql",
         pool: {
           max: 5,

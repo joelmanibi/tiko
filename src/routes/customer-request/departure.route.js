@@ -1,5 +1,5 @@
 const { verifyDuplicate } = require("../../middleware");
-const controller = require("../../controllers/manage-partner/trip/new-trip.controller");
+const controller = require("../../controllers/customer-request/departure/search-departure.controller");
 var multer = require('multer');
 var upload = multer();
 
@@ -11,12 +11,9 @@ module.exports = function(app) {
     );
     next();
   });
-  app.post(
-    "/api/partner/create-trip",
+  app.get(
+    "/api/customer/search-departure/:date/:from/:to",
     upload.array(),
-    [
-      verifyDuplicate.checkDuplicateTrip,
-    ],
-    controller.NewTrip
+    controller.searchdeparture
   );
 };
