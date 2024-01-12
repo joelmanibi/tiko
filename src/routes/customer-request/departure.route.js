@@ -1,5 +1,7 @@
 const { verifyDuplicate } = require("../../middleware");
-const controller = require("../../controllers/customer-request/departure/search-departure.controller");
+const controllerSearch = require("../../controllers/customer-request/departure/search-departure.controller");
+const controllerSeatAvailable = require("../../controllers/customer-request/bus/seat-available.controller");
+
 var multer = require('multer');
 var upload = multer();
 
@@ -14,6 +16,11 @@ module.exports = function(app) {
   app.get(
     "/api/customer/search-departure/:date/:from/:to",
     upload.array(),
-    controller.searchdeparture
+    controllerSearch.searchdeparture
+  );
+  app.get(
+    "/api/customer/available-seat/:date/:departure",
+    upload.array(),
+    controllerSeatAvailable.availableSeat
   );
 };

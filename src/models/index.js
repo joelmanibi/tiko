@@ -85,9 +85,6 @@ db.adminPartner.belongsTo(db.user,{ foreignKey: 'userUserId'});
 db.partner.hasMany(db.adminPartner, { foreignKey: 'partnerPartnerId' });
 db.adminPartner.belongsTo(db.partner,{ foreignKey: 'partnerPartnerId'});
 
-db.country.hasMany(db.user, { foreignKey: 'userCountry' });
-db.user.belongsTo(db.country,{ foreignKey: 'userCountry'});
-
 db.station.hasMany(db.trip, { foreignKey: 'tripOrigine' });
 db.trip.belongsTo(db.station,{ foreignKey: 'tripOrigine', as: 'gare_from'});
 
@@ -151,11 +148,11 @@ db.busPartner.belongsTo(db.modelCar,{ foreignKey: 'busPartnerModele'});
 db.marque.hasMany(db.modelCar, { foreignKey: 'IdMarque' });
 db.modelCar.belongsTo(db.marque,{ foreignKey: 'IdMarque'});
 
-db.columnSeat.hasMany(db.seat, { foreignKey: 'IdSeatPosition5Row'});
-db.seat.belongsTo(db.columnSeat,{ foreignKey: 'IdSeatPosition5Row'});
+db.columnSeat.hasMany(db.seat, { foreignKey: 'IdSeatPosition5Row', as:"Positionfor5Row"});
+db.seat.belongsTo(db.columnSeat,{ foreignKey: 'IdSeatPosition5Row', as:"Positionfor5Row"});
 
-db.columnSeat.hasMany(db.seat, { foreignKey: 'IdSeatPosition4Row'});
-db.seat.belongsTo(db.columnSeat,{ foreignKey: 'IdSeatPosition4Row'});
+db.columnSeat.hasMany(db.seat, { foreignKey: 'IdSeatPosition4Row', as:"Positionfor4Row"});
+db.seat.belongsTo(db.columnSeat,{ foreignKey: 'IdSeatPosition4Row', as:"Positionfor4Row"});
 
 db.seat.hasMany(db.booking, { foreignKey: 'IdSeat'});
 db.booking.belongsTo(db.seat,{ foreignKey: 'IdSeat'});

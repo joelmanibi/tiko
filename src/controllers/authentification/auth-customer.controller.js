@@ -45,6 +45,7 @@ exports.signinCustomer = (req, res) => {
   User.findOne({
     where: {
       userPhone: req.body.userPhone,
+      userCountry :req.body.userCountry,
       userIsActive: 1,
      // user_role:4
 

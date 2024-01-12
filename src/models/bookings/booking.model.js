@@ -17,6 +17,9 @@ module.exports = (sequelize, Sequelize) => {
       idSegment: {
         type: Sequelize.INTEGER
       },
+      departureDate: {
+        type: Sequelize.DATE
+      },
       idUser: {
         type: Sequelize.INTEGER
       },

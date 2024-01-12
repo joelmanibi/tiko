@@ -1,13 +1,13 @@
 module.exports = {
        
-       HOST: "srv971.hstgr.io",
+      HOST: "srv971.hstgr.io",
      USER: "u405557378_tiko",
-       PASSWORD: "Adm3Pl2*",
+     PASSWORD: "Adm3Pl2*",
      DB: "u405557378_tiko",
        
-     //   HOST: "localhost",
-     //   USER: "root",
-     //   PASSWORD: " ",
+    //    HOST: "localhost",
+    //    USER: "root",
+    //    PASSWORD: " ",
     //    DB: "tiko",
 
         dialect: "mysql",
@@ -18,7 +18,6 @@ module.exports = {
           idle: 10000
         }
       };
-
 
 //bootconst mysql = require('mysql');
 
