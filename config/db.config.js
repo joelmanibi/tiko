@@ -2,7 +2,7 @@ let environment;
 
 // Définir manuellement le mode d'environnement (production ou développement)
 // Changez la valeur de la variable 'mode' en 'prod' ou 'dev' selon vos besoins
-let mode = 'dev';
+let mode = 'prod';
 
 if (mode === 'prod') {
     environment = {
