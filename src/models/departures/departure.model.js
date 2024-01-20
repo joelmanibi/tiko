@@ -11,6 +11,9 @@ module.exports = (sequelize, Sequelize) => {
       departureHour: {
         type: Sequelize.TIME
       },
+      arrivalTime: {
+        type: Sequelize.TIME
+      },
       idBus: {
         type: Sequelize.INTEGER
       },

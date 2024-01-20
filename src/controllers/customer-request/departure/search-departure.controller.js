@@ -13,6 +13,7 @@ exports.searchdeparture = (req,res) => {
 
   Departure.findAll(
       {
+        order: [['departureHour', 'ASC']],
         include: [
           {
             model: Trip,
@@ -46,7 +47,8 @@ exports.searchdeparture = (req,res) => {
           },
           {
             model: DepartureType
-          }
+          },
+
       ]
       }
   ).then(dep=>{
