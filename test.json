@@ -1,0 +1,834 @@
+{
+    "dep": [
+      {
+        "departureId": 62,
+        "departureDayId": 6,
+        "departureHour": "05:30:00",
+        "arrivalTime": "15:00:00",
+        "idBus": 1,
+        "idTrip": 10,
+        "idTypeDeparture": 1,
+        "createdAt": "2024-01-06T00:52:56.000Z",
+        "updatedAt": "2024-01-06T00:52:56.000Z",
+        "trip": null,
+        "departureDay": {
+          "DayId": 6,
+          "DayName": "Samedi",
+          "DayJs": 6,
+          "createdAt": "2024-01-03T11:03:59.000Z",
+          "updatedAt": "2024-01-03T11:03:59.000Z"
+        },
+        "typeDeparture": {
+          "typeDepartureId": 1,
+          "typeDepartureName": "Depart 1",
+          "createdAt": "2024-01-03T09:34:37.000Z",
+          "updatedAt": "2024-01-03T09:34:37.000Z"
+        }
+      },
+      {
+        "departureId": 7,
+        "departureDayId": 6,
+        "departureHour": "06:30:00",
+        "arrivalTime": "15:00:00",
+        "idBus": 1,
+        "idTrip": 7,
+        "idTypeDeparture": 1,
+        "createdAt": "2024-01-06T00:24:22.000Z",
+        "updatedAt": "2024-01-06T00:24:22.000Z",
+        "trip": {
+          "tripId": 7,
+          "tripOrigine": 11,
+          "tripDestination": 12,
+          "tripCost": 7100,
+          "createdAt": "2024-01-03T18:07:40.000Z",
+          "updatedAt": "2024-01-03T18:07:40.000Z",
+          "gare_from": {
+            "stationId": 11,
+            "stationName": "Gare ART Adjamé",
+            "idPartner": 3,
+            "stationCity": "ChIJIZGVEVPqwQ8RpiGS4dwN5z8",
+            "longitude": "-4.0176608",
+            "latitude": "5.3481593",
+            "createdAt": "2024-01-03T17:00:48.000Z",
+            "updatedAt": "2024-01-03T17:00:48.000Z",
+            "partner": {
+              "partnerId": 3,
+              "partnerName": "ART Luxury Bus",
+              "partnerSigle": "ART",
+              "partnerLogo": "17042990517809bfrynclqxzngn9.jpg",
+              "createdAt": "2024-01-03T16:24:11.000Z",
+              "updatedAt": "2024-01-03T16:24:11.000Z"
+            }
+          },
+          "gare_to": {
+            "stationId": 12,
+            "stationName": "Gare ART Bouaké",
+            "idPartner": 3,
+            "stationCity": "ChIJezOhRxD_xw8R6w9BHhGA9G0",
+            "longitude": "-5.027565399999999",
+            "latitude": "7.680831899999999",
+            "createdAt": "2024-01-03T17:02:24.000Z",
+            "updatedAt": "2024-01-03T17:02:24.000Z"
+          }
+        },
+        "departureDay": {
+          "DayId": 6,
+          "DayName": "Samedi",
+          "DayJs": 6,
+          "createdAt": "2024-01-03T11:03:59.000Z",
+          "updatedAt": "2024-01-03T11:03:59.000Z"
+        },
+        "typeDeparture": {
+          "typeDepartureId": 1,
+          "typeDepartureName": "Depart 1",
+          "createdAt": "2024-01-03T09:34:37.000Z",
+          "updatedAt": "2024-01-03T09:34:37.000Z"
+        }
+      },
+      {
+        "departureId": 69,
+        "departureDayId": 6,
+        "departureHour": "06:30:00",
+        "arrivalTime": "15:00:00",
+        "idBus": 1,
+        "idTrip": 10,
+        "idTypeDeparture": 2,
+        "createdAt": "2024-01-06T00:53:14.000Z",
+        "updatedAt": "2024-01-06T00:53:14.000Z",
+        "trip": null,
+        "departureDay": {
+          "DayId": 6,
+          "DayName": "Samedi",
+          "DayJs": 6,
+          "createdAt": "2024-01-03T11:03:59.000Z",
+          "updatedAt": "2024-01-03T11:03:59.000Z"
+        },
+        "typeDeparture": {
+          "typeDepartureId": 2,
+          "typeDepartureName": "Depart 2",
+          "createdAt": "2024-01-03T09:34:37.000Z",
+          "updatedAt": "2024-01-03T09:34:37.000Z"
+        }
+      },
+      {
+        "departureId": 125,
+        "departureDayId": 6,
+        "departureHour": "07:00:00",
+        "arrivalTime": "15:00:00",
+        "idBus": 1,
+        "idTrip": 2,
+        "idTypeDeparture": 1,
+        "createdAt": "2024-01-06T01:04:15.000Z",
+        "updatedAt": "2024-01-06T01:04:15.000Z",
+        "trip": null,
+        "departureDay": {
+          "DayId": 6,
+          "DayName": "Samedi",
+          "DayJs": 6,
+          "createdAt": "2024-01-03T11:03:59.000Z",
+          "updatedAt": "2024-01-03T11:03:59.000Z"
+        },
+        "typeDeparture": {
+          "typeDepartureId": 1,
+          "typeDepartureName": "Depart 1",
+          "createdAt": "2024-01-03T09:34:37.000Z",
+          "updatedAt": "2024-01-03T09:34:37.000Z"
+        }
+      },
+      {
+        "departureId": 74,
+        "departureDayId": 6,
+        "departureHour": "08:00:00",
+        "arrivalTime": "15:00:00",
+        "idBus": 1,
+        "idTrip": 10,
+        "idTypeDeparture": 3,
+        "createdAt": "2024-01-06T00:53:39.000Z",
+        "updatedAt": "2024-01-06T00:53:39.000Z",
+        "trip": null,
+        "departureDay": {
+          "DayId": 6,
+          "DayName": "Samedi",
+          "DayJs": 6,
+          "createdAt": "2024-01-03T11:03:59.000Z",
+          "updatedAt": "2024-01-03T11:03:59.000Z"
+        },
+        "typeDeparture": {
+          "typeDepartureId": 3,
+          "typeDepartureName": "Depart 3",
+          "createdAt": "2024-01-03T09:34:37.000Z",
+          "updatedAt": "2024-01-03T09:34:37.000Z"
+        }
+      },
+      {
+        "departureId": 132,
+        "departureDayId": 6,
+        "departureHour": "08:30:00",
+        "arrivalTime": "15:00:00",
+        "idBus": 1,
+        "idTrip": 2,
+        "idTypeDeparture": 2,
+        "createdAt": "2024-01-06T01:04:45.000Z",
+        "updatedAt": "2024-01-06T01:04:45.000Z",
+        "trip": null,
+        "departureDay": {
+          "DayId": 6,
+          "DayName": "Samedi",
+          "DayJs": 6,
+          "createdAt": "2024-01-03T11:03:59.000Z",
+          "updatedAt": "2024-01-03T11:03:59.000Z"
+        },
+        "typeDeparture": {
+          "typeDepartureId": 2,
+          "typeDepartureName": "Depart 2",
+          "createdAt": "2024-01-03T09:34:37.000Z",
+          "updatedAt": "2024-01-03T09:34:37.000Z"
+        }
+      },
+      {
+        "departureId": 13,
+        "departureDayId": 6,
+        "departureHour": "09:00:00",
+        "arrivalTime": "15:00:00",
+        "idBus": 1,
+        "idTrip": 7,
+        "idTypeDeparture": 2,
+        "createdAt": "2024-01-06T00:47:09.000Z",
+        "updatedAt": "2024-01-06T00:47:09.000Z",
+        "trip": {
+          "tripId": 7,
+          "tripOrigine": 11,
+          "tripDestination": 12,
+          "tripCost": 7100,
+          "createdAt": "2024-01-03T18:07:40.000Z",
+          "updatedAt": "2024-01-03T18:07:40.000Z",
+          "gare_from": {
+            "stationId": 11,
+            "stationName": "Gare ART Adjamé",
+            "idPartner": 3,
+            "stationCity": "ChIJIZGVEVPqwQ8RpiGS4dwN5z8",
+            "longitude": "-4.0176608",
+            "latitude": "5.3481593",
+            "createdAt": "2024-01-03T17:00:48.000Z",
+            "updatedAt": "2024-01-03T17:00:48.000Z",
+            "partner": {
+              "partnerId": 3,
+              "partnerName": "ART Luxury Bus",
+              "partnerSigle": "ART",
+              "partnerLogo": "17042990517809bfrynclqxzngn9.jpg",
+              "createdAt": "2024-01-03T16:24:11.000Z",
+              "updatedAt": "2024-01-03T16:24:11.000Z"
+            }
+          },
+          "gare_to": {
+            "stationId": 12,
+            "stationName": "Gare ART Bouaké",
+            "idPartner": 3,
+            "stationCity": "ChIJezOhRxD_xw8R6w9BHhGA9G0",
+            "longitude": "-5.027565399999999",
+            "latitude": "7.680831899999999",
+            "createdAt": "2024-01-03T17:02:24.000Z",
+            "updatedAt": "2024-01-03T17:02:24.000Z"
+          }
+        },
+        "departureDay": {
+          "DayId": 6,
+          "DayName": "Samedi",
+          "DayJs": 6,
+          "createdAt": "2024-01-03T11:03:59.000Z",
+          "updatedAt": "2024-01-03T11:03:59.000Z"
+        },
+        "typeDeparture": {
+          "typeDepartureId": 2,
+          "typeDepartureName": "Depart 2",
+          "createdAt": "2024-01-03T09:34:37.000Z",
+          "updatedAt": "2024-01-03T09:34:37.000Z"
+        }
+      },
+      {
+        "departureId": 135,
+        "departureDayId": 6,
+        "departureHour": "10:00:00",
+        "arrivalTime": "15:00:00",
+        "idBus": 1,
+        "idTrip": 2,
+        "idTypeDeparture": 3,
+        "createdAt": "2024-01-06T01:05:11.000Z",
+        "updatedAt": "2024-01-06T01:05:11.000Z",
+        "trip": null,
+        "departureDay": {
+          "DayId": 6,
+          "DayName": "Samedi",
+          "DayJs": 6,
+          "createdAt": "2024-01-03T11:03:59.000Z",
+          "updatedAt": "2024-01-03T11:03:59.000Z"
+        },
+        "typeDeparture": {
+          "typeDepartureId": 3,
+          "typeDepartureName": "Depart 3",
+          "createdAt": "2024-01-03T09:34:37.000Z",
+          "updatedAt": "2024-01-03T09:34:37.000Z"
+        }
+      },
+      {
+        "departureId": 83,
+        "departureDayId": 6,
+        "departureHour": "10:00:00",
+        "arrivalTime": "15:00:00",
+        "idBus": 1,
+        "idTrip": 10,
+        "idTypeDeparture": 4,
+        "createdAt": "2024-01-06T00:53:54.000Z",
+        "updatedAt": "2024-01-06T00:53:54.000Z",
+        "trip": null,
+        "departureDay": {
+          "DayId": 6,
+          "DayName": "Samedi",
+          "DayJs": 6,
+          "createdAt": "2024-01-03T11:03:59.000Z",
+          "updatedAt": "2024-01-03T11:03:59.000Z"
+        },
+        "typeDeparture": {
+          "typeDepartureId": 4,
+          "typeDepartureName": "Depart 4",
+          "createdAt": "2024-01-03T09:34:37.000Z",
+          "updatedAt": "2024-01-03T09:34:37.000Z"
+        }
+      },
+      {
+        "departureId": 20,
+        "departureDayId": 6,
+        "departureHour": "11:00:00",
+        "arrivalTime": "15:00:00",
+        "idBus": 1,
+        "idTrip": 7,
+        "idTypeDeparture": 3,
+        "createdAt": "2024-01-06T00:47:34.000Z",
+        "updatedAt": "2024-01-06T00:47:34.000Z",
+        "trip": {
+          "tripId": 7,
+          "tripOrigine": 11,
+          "tripDestination": 12,
+          "tripCost": 7100,
+          "createdAt": "2024-01-03T18:07:40.000Z",
+          "updatedAt": "2024-01-03T18:07:40.000Z",
+          "gare_from": {
+            "stationId": 11,
+            "stationName": "Gare ART Adjamé",
+            "idPartner": 3,
+            "stationCity": "ChIJIZGVEVPqwQ8RpiGS4dwN5z8",
+            "longitude": "-4.0176608",
+            "latitude": "5.3481593",
+            "createdAt": "2024-01-03T17:00:48.000Z",
+            "updatedAt": "2024-01-03T17:00:48.000Z",
+            "partner": {
+              "partnerId": 3,
+              "partnerName": "ART Luxury Bus",
+              "partnerSigle": "ART",
+              "partnerLogo": "17042990517809bfrynclqxzngn9.jpg",
+              "createdAt": "2024-01-03T16:24:11.000Z",
+              "updatedAt": "2024-01-03T16:24:11.000Z"
+            }
+          },
+          "gare_to": {
+            "stationId": 12,
+            "stationName": "Gare ART Bouaké",
+            "idPartner": 3,
+            "stationCity": "ChIJezOhRxD_xw8R6w9BHhGA9G0",
+            "longitude": "-5.027565399999999",
+            "latitude": "7.680831899999999",
+            "createdAt": "2024-01-03T17:02:24.000Z",
+            "updatedAt": "2024-01-03T17:02:24.000Z"
+          }
+        },
+        "departureDay": {
+          "DayId": 6,
+          "DayName": "Samedi",
+          "DayJs": 6,
+          "createdAt": "2024-01-03T11:03:59.000Z",
+          "updatedAt": "2024-01-03T11:03:59.000Z"
+        },
+        "typeDeparture": {
+          "typeDepartureId": 3,
+          "typeDepartureName": "Depart 3",
+          "createdAt": "2024-01-03T09:34:37.000Z",
+          "updatedAt": "2024-01-03T09:34:37.000Z"
+        }
+      },
+      {
+        "departureId": 146,
+        "departureDayId": 6,
+        "departureHour": "11:30:00",
+        "arrivalTime": "15:00:00",
+        "idBus": 1,
+        "idTrip": 2,
+        "idTypeDeparture": 4,
+        "createdAt": "2024-01-06T01:05:52.000Z",
+        "updatedAt": "2024-01-06T01:05:52.000Z",
+        "trip": null,
+        "departureDay": {
+          "DayId": 6,
+          "DayName": "Samedi",
+          "DayJs": 6,
+          "createdAt": "2024-01-03T11:03:59.000Z",
+          "updatedAt": "2024-01-03T11:03:59.000Z"
+        },
+        "typeDeparture": {
+          "typeDepartureId": 4,
+          "typeDepartureName": "Depart 4",
+          "createdAt": "2024-01-03T09:34:37.000Z",
+          "updatedAt": "2024-01-03T09:34:37.000Z"
+        }
+      },
+      {
+        "departureId": 90,
+        "departureDayId": 6,
+        "departureHour": "12:00:00",
+        "arrivalTime": "15:00:00",
+        "idBus": 1,
+        "idTrip": 10,
+        "idTypeDeparture": 5,
+        "createdAt": "2024-01-06T00:54:13.000Z",
+        "updatedAt": "2024-01-06T00:54:13.000Z",
+        "trip": null,
+        "departureDay": {
+          "DayId": 6,
+          "DayName": "Samedi",
+          "DayJs": 6,
+          "createdAt": "2024-01-03T11:03:59.000Z",
+          "updatedAt": "2024-01-03T11:03:59.000Z"
+        },
+        "typeDeparture": {
+          "typeDepartureId": 5,
+          "typeDepartureName": "Depart 5",
+          "createdAt": "2024-01-03T09:34:37.000Z",
+          "updatedAt": "2024-01-03T09:34:37.000Z"
+        }
+      },
+      {
+        "departureId": 152,
+        "departureDayId": 6,
+        "departureHour": "13:00:00",
+        "arrivalTime": "15:00:00",
+        "idBus": 1,
+        "idTrip": 2,
+        "idTypeDeparture": 5,
+        "createdAt": "2024-01-06T01:06:17.000Z",
+        "updatedAt": "2024-01-06T01:06:17.000Z",
+        "trip": null,
+        "departureDay": {
+          "DayId": 6,
+          "DayName": "Samedi",
+          "DayJs": 6,
+          "createdAt": "2024-01-03T11:03:59.000Z",
+          "updatedAt": "2024-01-03T11:03:59.000Z"
+        },
+        "typeDeparture": {
+          "typeDepartureId": 5,
+          "typeDepartureName": "Depart 5",
+          "createdAt": "2024-01-03T09:34:37.000Z",
+          "updatedAt": "2024-01-03T09:34:37.000Z"
+        }
+      },
+      {
+        "departureId": 27,
+        "departureDayId": 6,
+        "departureHour": "13:00:00",
+        "arrivalTime": "15:00:00",
+        "idBus": 1,
+        "idTrip": 7,
+        "idTypeDeparture": 4,
+        "createdAt": "2024-01-06T00:47:56.000Z",
+        "updatedAt": "2024-01-06T00:47:56.000Z",
+        "trip": {
+          "tripId": 7,
+          "tripOrigine": 11,
+          "tripDestination": 12,
+          "tripCost": 7100,
+          "createdAt": "2024-01-03T18:07:40.000Z",
+          "updatedAt": "2024-01-03T18:07:40.000Z",
+          "gare_from": {
+            "stationId": 11,
+            "stationName": "Gare ART Adjamé",
+            "idPartner": 3,
+            "stationCity": "ChIJIZGVEVPqwQ8RpiGS4dwN5z8",
+            "longitude": "-4.0176608",
+            "latitude": "5.3481593",
+            "createdAt": "2024-01-03T17:00:48.000Z",
+            "updatedAt": "2024-01-03T17:00:48.000Z",
+            "partner": {
+              "partnerId": 3,
+              "partnerName": "ART Luxury Bus",
+              "partnerSigle": "ART",
+              "partnerLogo": "17042990517809bfrynclqxzngn9.jpg",
+              "createdAt": "2024-01-03T16:24:11.000Z",
+              "updatedAt": "2024-01-03T16:24:11.000Z"
+            }
+          },
+          "gare_to": {
+            "stationId": 12,
+            "stationName": "Gare ART Bouaké",
+            "idPartner": 3,
+            "stationCity": "ChIJezOhRxD_xw8R6w9BHhGA9G0",
+            "longitude": "-5.027565399999999",
+            "latitude": "7.680831899999999",
+            "createdAt": "2024-01-03T17:02:24.000Z",
+            "updatedAt": "2024-01-03T17:02:24.000Z"
+          }
+        },
+        "departureDay": {
+          "DayId": 6,
+          "DayName": "Samedi",
+          "DayJs": 6,
+          "createdAt": "2024-01-03T11:03:59.000Z",
+          "updatedAt": "2024-01-03T11:03:59.000Z"
+        },
+        "typeDeparture": {
+          "typeDepartureId": 4,
+          "typeDepartureName": "Depart 4",
+          "createdAt": "2024-01-03T09:34:37.000Z",
+          "updatedAt": "2024-01-03T09:34:37.000Z"
+        }
+      },
+      {
+        "departureId": 96,
+        "departureDayId": 6,
+        "departureHour": "14:00:00",
+        "arrivalTime": "15:00:00",
+        "idBus": 1,
+        "idTrip": 10,
+        "idTypeDeparture": 6,
+        "createdAt": "2024-01-06T00:54:45.000Z",
+        "updatedAt": "2024-01-06T00:54:45.000Z",
+        "trip": null,
+        "departureDay": {
+          "DayId": 6,
+          "DayName": "Samedi",
+          "DayJs": 6,
+          "createdAt": "2024-01-03T11:03:59.000Z",
+          "updatedAt": "2024-01-03T11:03:59.000Z"
+        },
+        "typeDeparture": {
+          "typeDepartureId": 6,
+          "typeDepartureName": "Depart 6",
+          "createdAt": "2024-01-03T09:34:37.000Z",
+          "updatedAt": "2024-01-03T09:34:37.000Z"
+        }
+      },
+      {
+        "departureId": 34,
+        "departureDayId": 6,
+        "departureHour": "15:00:00",
+        "arrivalTime": "15:00:00",
+        "idBus": 1,
+        "idTrip": 7,
+        "idTypeDeparture": 5,
+        "createdAt": "2024-01-06T00:48:18.000Z",
+        "updatedAt": "2024-01-06T00:48:18.000Z",
+        "trip": {
+          "tripId": 7,
+          "tripOrigine": 11,
+          "tripDestination": 12,
+          "tripCost": 7100,
+          "createdAt": "2024-01-03T18:07:40.000Z",
+          "updatedAt": "2024-01-03T18:07:40.000Z",
+          "gare_from": {
+            "stationId": 11,
+            "stationName": "Gare ART Adjamé",
+            "idPartner": 3,
+            "stationCity": "ChIJIZGVEVPqwQ8RpiGS4dwN5z8",
+            "longitude": "-4.0176608",
+            "latitude": "5.3481593",
+            "createdAt": "2024-01-03T17:00:48.000Z",
+            "updatedAt": "2024-01-03T17:00:48.000Z",
+            "partner": {
+              "partnerId": 3,
+              "partnerName": "ART Luxury Bus",
+              "partnerSigle": "ART",
+              "partnerLogo": "17042990517809bfrynclqxzngn9.jpg",
+              "createdAt": "2024-01-03T16:24:11.000Z",
+              "updatedAt": "2024-01-03T16:24:11.000Z"
+            }
+          },
+          "gare_to": {
+            "stationId": 12,
+            "stationName": "Gare ART Bouaké",
+            "idPartner": 3,
+            "stationCity": "ChIJezOhRxD_xw8R6w9BHhGA9G0",
+            "longitude": "-5.027565399999999",
+            "latitude": "7.680831899999999",
+            "createdAt": "2024-01-03T17:02:24.000Z",
+            "updatedAt": "2024-01-03T17:02:24.000Z"
+          }
+        },
+        "departureDay": {
+          "DayId": 6,
+          "DayName": "Samedi",
+          "DayJs": 6,
+          "createdAt": "2024-01-03T11:03:59.000Z",
+          "updatedAt": "2024-01-03T11:03:59.000Z"
+        },
+        "typeDeparture": {
+          "typeDepartureId": 5,
+          "typeDepartureName": "Depart 5",
+          "createdAt": "2024-01-03T09:34:37.000Z",
+          "updatedAt": "2024-01-03T09:34:37.000Z"
+        }
+      },
+      {
+        "departureId": 104,
+        "departureDayId": 6,
+        "departureHour": "16:00:00",
+        "arrivalTime": "15:00:00",
+        "idBus": 1,
+        "idTrip": 10,
+        "idTypeDeparture": 7,
+        "createdAt": "2024-01-06T00:55:26.000Z",
+        "updatedAt": "2024-01-06T00:55:26.000Z",
+        "trip": null,
+        "departureDay": {
+          "DayId": 6,
+          "DayName": "Samedi",
+          "DayJs": 6,
+          "createdAt": "2024-01-03T11:03:59.000Z",
+          "updatedAt": "2024-01-03T11:03:59.000Z"
+        },
+        "typeDeparture": {
+          "typeDepartureId": 7,
+          "typeDepartureName": "Depart 7",
+          "createdAt": "2024-01-03T09:34:37.000Z",
+          "updatedAt": "2024-01-03T09:34:37.000Z"
+        }
+      },
+      {
+        "departureId": 41,
+        "departureDayId": 6,
+        "departureHour": "17:00:00",
+        "arrivalTime": "15:00:00",
+        "idBus": 1,
+        "idTrip": 7,
+        "idTypeDeparture": 6,
+        "createdAt": "2024-01-06T00:48:43.000Z",
+        "updatedAt": "2024-01-06T00:48:43.000Z",
+        "trip": {
+          "tripId": 7,
+          "tripOrigine": 11,
+          "tripDestination": 12,
+          "tripCost": 7100,
+          "createdAt": "2024-01-03T18:07:40.000Z",
+          "updatedAt": "2024-01-03T18:07:40.000Z",
+          "gare_from": {
+            "stationId": 11,
+            "stationName": "Gare ART Adjamé",
+            "idPartner": 3,
+            "stationCity": "ChIJIZGVEVPqwQ8RpiGS4dwN5z8",
+            "longitude": "-4.0176608",
+            "latitude": "5.3481593",
+            "createdAt": "2024-01-03T17:00:48.000Z",
+            "updatedAt": "2024-01-03T17:00:48.000Z",
+            "partner": {
+              "partnerId": 3,
+              "partnerName": "ART Luxury Bus",
+              "partnerSigle": "ART",
+              "partnerLogo": "17042990517809bfrynclqxzngn9.jpg",
+              "createdAt": "2024-01-03T16:24:11.000Z",
+              "updatedAt": "2024-01-03T16:24:11.000Z"
+            }
+          },
+          "gare_to": {
+            "stationId": 12,
+            "stationName": "Gare ART Bouaké",
+            "idPartner": 3,
+            "stationCity": "ChIJezOhRxD_xw8R6w9BHhGA9G0",
+            "longitude": "-5.027565399999999",
+            "latitude": "7.680831899999999",
+            "createdAt": "2024-01-03T17:02:24.000Z",
+            "updatedAt": "2024-01-03T17:02:24.000Z"
+          }
+        },
+        "departureDay": {
+          "DayId": 6,
+          "DayName": "Samedi",
+          "DayJs": 6,
+          "createdAt": "2024-01-03T11:03:59.000Z",
+          "updatedAt": "2024-01-03T11:03:59.000Z"
+        },
+        "typeDeparture": {
+          "typeDepartureId": 6,
+          "typeDepartureName": "Depart 6",
+          "createdAt": "2024-01-03T09:34:37.000Z",
+          "updatedAt": "2024-01-03T09:34:37.000Z"
+        }
+      },
+      {
+        "departureId": 107,
+        "departureDayId": 6,
+        "departureHour": "18:00:00",
+        "arrivalTime": "15:00:00",
+        "idBus": 1,
+        "idTrip": 10,
+        "idTypeDeparture": 8,
+        "createdAt": "2024-01-06T00:55:43.000Z",
+        "updatedAt": "2024-01-06T00:55:43.000Z",
+        "trip": null,
+        "departureDay": {
+          "DayId": 6,
+          "DayName": "Samedi",
+          "DayJs": 6,
+          "createdAt": "2024-01-03T11:03:59.000Z",
+          "updatedAt": "2024-01-03T11:03:59.000Z"
+        },
+        "typeDeparture": {
+          "typeDepartureId": 8,
+          "typeDepartureName": "Depart 8",
+          "createdAt": "2024-01-03T09:34:37.000Z",
+          "updatedAt": "2024-01-03T09:34:37.000Z"
+        }
+      },
+      {
+        "departureId": 48,
+        "departureDayId": 6,
+        "departureHour": "19:00:00",
+        "arrivalTime": "15:00:00",
+        "idBus": 1,
+        "idTrip": 7,
+        "idTypeDeparture": 7,
+        "createdAt": "2024-01-06T00:49:23.000Z",
+        "updatedAt": "2024-01-06T00:49:23.000Z",
+        "trip": {
+          "tripId": 7,
+          "tripOrigine": 11,
+          "tripDestination": 12,
+          "tripCost": 7100,
+          "createdAt": "2024-01-03T18:07:40.000Z",
+          "updatedAt": "2024-01-03T18:07:40.000Z",
+          "gare_from": {
+            "stationId": 11,
+            "stationName": "Gare ART Adjamé",
+            "idPartner": 3,
+            "stationCity": "ChIJIZGVEVPqwQ8RpiGS4dwN5z8",
+            "longitude": "-4.0176608",
+            "latitude": "5.3481593",
+            "createdAt": "2024-01-03T17:00:48.000Z",
+            "updatedAt": "2024-01-03T17:00:48.000Z",
+            "partner": {
+              "partnerId": 3,
+              "partnerName": "ART Luxury Bus",
+              "partnerSigle": "ART",
+              "partnerLogo": "17042990517809bfrynclqxzngn9.jpg",
+              "createdAt": "2024-01-03T16:24:11.000Z",
+              "updatedAt": "2024-01-03T16:24:11.000Z"
+            }
+          },
+          "gare_to": {
+            "stationId": 12,
+            "stationName": "Gare ART Bouaké",
+            "idPartner": 3,
+            "stationCity": "ChIJezOhRxD_xw8R6w9BHhGA9G0",
+            "longitude": "-5.027565399999999",
+            "latitude": "7.680831899999999",
+            "createdAt": "2024-01-03T17:02:24.000Z",
+            "updatedAt": "2024-01-03T17:02:24.000Z"
+          }
+        },
+        "departureDay": {
+          "DayId": 6,
+          "DayName": "Samedi",
+          "DayJs": 6,
+          "createdAt": "2024-01-03T11:03:59.000Z",
+          "updatedAt": "2024-01-03T11:03:59.000Z"
+        },
+        "typeDeparture": {
+          "typeDepartureId": 7,
+          "typeDepartureName": "Depart 7",
+          "createdAt": "2024-01-03T09:34:37.000Z",
+          "updatedAt": "2024-01-03T09:34:37.000Z"
+        }
+      },
+      {
+        "departureId": 55,
+        "departureDayId": 6,
+        "departureHour": "21:00:00",
+        "arrivalTime": "15:00:00",
+        "idBus": 1,
+        "idTrip": 7,
+        "idTypeDeparture": 8,
+        "createdAt": "2024-01-06T00:49:48.000Z",
+        "updatedAt": "2024-01-06T00:49:48.000Z",
+        "trip": {
+          "tripId": 7,
+          "tripOrigine": 11,
+          "tripDestination": 12,
+          "tripCost": 7100,
+          "createdAt": "2024-01-03T18:07:40.000Z",
+          "updatedAt": "2024-01-03T18:07:40.000Z",
+          "gare_from": {
+            "stationId": 11,
+            "stationName": "Gare ART Adjamé",
+            "idPartner": 3,
+            "stationCity": "ChIJIZGVEVPqwQ8RpiGS4dwN5z8",
+            "longitude": "-4.0176608",
+            "latitude": "5.3481593",
+            "createdAt": "2024-01-03T17:00:48.000Z",
+            "updatedAt": "2024-01-03T17:00:48.000Z",
+            "partner": {
+              "partnerId": 3,
+              "partnerName": "ART Luxury Bus",
+              "partnerSigle": "ART",
+              "partnerLogo": "17042990517809bfrynclqxzngn9.jpg",
+              "createdAt": "2024-01-03T16:24:11.000Z",
+              "updatedAt": "2024-01-03T16:24:11.000Z"
+            }
+          },
+          "gare_to": {
+            "stationId": 12,
+            "stationName": "Gare ART Bouaké",
+            "idPartner": 3,
+            "stationCity": "ChIJezOhRxD_xw8R6w9BHhGA9G0",
+            "longitude": "-5.027565399999999",
+            "latitude": "7.680831899999999",
+            "createdAt": "2024-01-03T17:02:24.000Z",
+            "updatedAt": "2024-01-03T17:02:24.000Z"
+          }
+        },
+        "departureDay": {
+          "DayId": 6,
+          "DayName": "Samedi",
+          "DayJs": 6,
+          "createdAt": "2024-01-03T11:03:59.000Z",
+          "updatedAt": "2024-01-03T11:03:59.000Z"
+        },
+        "typeDeparture": {
+          "typeDepartureId": 8,
+          "typeDepartureName": "Depart 8",
+          "createdAt": "2024-01-03T09:34:37.000Z",
+          "updatedAt": "2024-01-03T09:34:37.000Z"
+        }
+      },
+      {
+        "departureId": 117,
+        "departureDayId": 6,
+        "departureHour": "23:00:00",
+        "arrivalTime": "15:00:00",
+        "idBus": 1,
+        "idTrip": 10,
+        "idTypeDeparture": 9,
+        "createdAt": "2024-01-06T00:55:59.000Z",
+        "updatedAt": "2024-01-06T00:55:59.000Z",
+        "trip": null,
+        "departureDay": {
+          "DayId": 6,
+          "DayName": "Samedi",
+          "DayJs": 6,
+          "createdAt": "2024-01-03T11:03:59.000Z",
+          "updatedAt": "2024-01-03T11:03:59.000Z"
+        },
+        "typeDeparture": {
+          "typeDepartureId": 9,
+          "typeDepartureName": "Depart 9",
+          "createdAt": "2024-01-03T09:34:37.000Z",
+          "updatedAt": "2024-01-03T09:34:37.000Z"
+        }
+      }
+    ]
+  }
