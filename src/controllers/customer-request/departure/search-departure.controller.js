@@ -10,27 +10,26 @@ const Station = db.station;
 exports.searchdeparture = (req,res) => {
 
   const current = new Date();
-  const  annee = current.getFullYear();
-  const  mois = current.getMonth() + 1; // Les mois commencent à 0, donc ajoutez 1
-  const jour = current.getDate();
+  const  currentYear = current.getFullYear();
+  const  currentMonth = current.getMonth() + 1; // Les mois commencent à 0, donc ajoutez 1
+  const currentDay = current.getDate();
   const  heures = current.getHours();
   const minutes = current.getMinutes();
-  const myhour = heures+":"+minutes;
-  const today = annee+"-"+mois+"-"+jour;
-  const maDate = new Date(req.params.date);
-  const dayInJs = maDate.getDay();
+  const currentHour = heures+":"+minutes;
+  const today = currentYear+"-"+currentMonth+"-"+currentDay;
+  const requestDate = new Date(req.params.date);
+  const dayInJs = requestDate.getDay();
+  const  requestYear = requestDate.getFullYear();
+  const  requestMonth = requestDate.getMonth() + 1; // Les mois commencent à 0, donc ajoutez 1
+  const requestDay = requestDate.getDate();
 
-  const  anneereq = maDate.getFullYear();
-  const  moisreq = maDate.getMonth() + 1; // Les mois commencent à 0, donc ajoutez 1
-  const jourreq = maDate.getDate();
+  const MyrequestDate = requestYear+"-"+requestMonth+"-"+requestDay;
 
-  const todayq = anneereq+"-"+moisreq+"-"+jourreq;
-
-  (today == todayq) ? Departure.findAll(
+  (today == MyrequestDate) ? Departure.findAll(
     {
       where: {
         departureHour: {
-          [Op.gte]: myhour,
+          [Op.gte]: currentHour,
         }
       },
       order: [['departureHour', 'ASC']],
@@ -38,6 +37,7 @@ exports.searchdeparture = (req,res) => {
       include: [
         {
           model: Trip,
+          required: true,
           include : [
             {
               model:Station,
@@ -87,6 +87,7 @@ exports.searchdeparture = (req,res) => {
       include: [
         {
           model: Trip,
+          required: true,
           include : [
             {
               model:Station,

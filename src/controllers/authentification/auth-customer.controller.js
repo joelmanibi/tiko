@@ -82,8 +82,8 @@ exports.signinCustomer = (req, res) => {
         //console.log(token)
       res.status(200).json({
         userId: user.userId,
-        userFirstname: req.body.userFirstname,
-        userLastname: req.body.userLastname,
+        userFirstname: user.userFirstname,
+        userLastname: user.userLastname,
         userPhone: user.userPhone,
         userToken: token,
         statutcode: 1

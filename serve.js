@@ -16,6 +16,8 @@ app.use(bodyParser.json());
 //parse request date type application/x-www-form-rulencoded
 app.use(bodyParser.urlencoded({extended:true}));
 
+app.use('/static', express.static('assets'));
+
 // for parsing multipart/form-data
 
 
