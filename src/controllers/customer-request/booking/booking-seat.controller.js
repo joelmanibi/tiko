@@ -1,11 +1,11 @@
 const db = require("../../../models");
 const { Op } = require("sequelize");
 const Departure = db.departure;
-const ColumnSeat = db.columnSeat;
 const Booking = db.booking;
+const ColumnSeat = db.columnSeat;
 const Seat = db.seat;
 
-exports.availableSeat = (req,res) => {
+exports.bookingSeat = (req,res) => {
 
     const votreIdDeDepart = req.params.departure;  // Remplacez par l'ID de votre départ
     const votreDateDeDepart = req.params.date; ;  

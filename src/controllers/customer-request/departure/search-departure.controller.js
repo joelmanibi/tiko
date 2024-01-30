@@ -3,9 +3,11 @@ const { Op } = require("sequelize");
 const Departure = db.departure;
 const DepartureDay = db.departureDay;
 const DepartureType = db.departureType;
+const Booking = db.booking;
 const Trip = db.trip;
 const Partner = db.partner;
 const Station = db.station;
+const Seat = db.seat;
 
 exports.searchdeparture = (req,res) => {
 
@@ -72,8 +74,50 @@ exports.searchdeparture = (req,res) => {
 
     ]
     }
-).then(dep=>{
-    res.status(200).json({dep})
+).then(departures=>{
+    // Promesses pour chaque départ
+    const promises = departures.map(departure => {
+      // Recherche des sièges réservés pour le départ et la date spécifiés
+      return Booking.findAll({
+          attributes: ['IdSeat'],
+          where: {
+              idDeparture: departure.departureId,
+              departureDate: MyrequestDate,
+          }
+      })
+          .then(bookedSeats => {
+              const bookedSeatIds = bookedSeats.map(booking => booking.IdSeat);
+  
+              // Recherche des sièges non réservés
+              return Seat.findAll({
+                  where: {
+                      seatId: {
+                          [Op.notIn]: bookedSeatIds,
+                      }
+                  }
+              });
+          })
+          .then(unbookedSeats => {
+              // Calculer le nombre de places disponibles pour ce départ
+              
+              const availableSeats = unbookedSeats.length;
+              console.log(availableSeats);
+              // Ajouter le nombre de places disponibles à l'objet départ
+              departure.availableSeats = availableSeats;
+  
+              return {
+                departure: departure,
+                availableSeats: availableSeats
+            };
+          });
+  });
+  
+  // Exécution de toutes les promesses en parallèle
+  return Promise.all(promises);
+  })
+  .then(departuresWithSeats => {
+  res.status(200).json({ departuresWithSeats });
+
 }).catch(err => {
     res.status(500).send({
       message: err.message,
@@ -122,12 +166,54 @@ exports.searchdeparture = (req,res) => {
 
     ]
     }
-).then(dep=>{
-    res.status(200).json({dep})
-}).catch(err => {
-    res.status(500).send({
-      message: err.message,
-      statutcode: 0
-     });
-  })
+).then(departures => {
+  // Promesses pour chaque départ
+  const promises = departures.map(departure => {
+    // Recherche des sièges réservés pour le départ et la date spécifiés
+    return Booking.findAll({
+        attributes: ['IdSeat'],
+        where: {
+            idDeparture: departure.departureId,
+            departureDate: MyrequestDate,
+        }
+    })
+        .then(bookedSeats => {
+            const bookedSeatIds = bookedSeats.map(booking => booking.IdSeat);
+
+            // Recherche des sièges non réservés
+            return Seat.findAll({
+                where: {
+                    seatId: {
+                        [Op.notIn]: bookedSeatIds,
+                    }
+                }
+            });
+        })
+        .then(unbookedSeats => {
+            // Calculer le nombre de places disponibles pour ce départ
+            
+            const availableSeats = unbookedSeats.length;
+            console.log(availableSeats);
+            // Ajouter le nombre de places disponibles à l'objet départ
+            departure.availableSeats = availableSeats;
+
+            return {
+              departure: departure,
+              availableSeats: availableSeats
+          };
+        });
+});
+
+// Exécution de toutes les promesses en parallèle
+return Promise.all(promises);
+})
+.then(departuresWithSeats => {
+res.status(200).json({ departuresWithSeats });
+})
+.catch(error => {
+res.status(500).send({
+    message: error.message,
+    statutcode: 0
+});
+});
 }
