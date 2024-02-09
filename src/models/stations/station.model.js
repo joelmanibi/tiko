@@ -11,6 +11,10 @@ module.exports = (sequelize, Sequelize) => {
       idPartner: {
         type: Sequelize.INTEGER
       },
+      stationPhone:{
+        type: Sequelize.STRING
+      }
+      ,
       stationCity: {
         type: Sequelize.STRING
       },

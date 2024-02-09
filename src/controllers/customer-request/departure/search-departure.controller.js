@@ -101,7 +101,7 @@ exports.searchdeparture = (req,res) => {
               // Calculer le nombre de places disponibles pour ce départ
               
               const availableSeats = unbookedSeats.length;
-              console.log(availableSeats);
+              
               // Ajouter le nombre de places disponibles à l'objet départ
               departure.availableSeats = availableSeats;
   

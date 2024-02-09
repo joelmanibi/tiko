@@ -1,6 +1,6 @@
 const db = require("../../../models");
 const { Op } = require("sequelize");
-const Departure = db.departure;
+// const Departure = db.departure;
 const ColumnSeat = db.columnSeat;
 const Booking = db.booking;
 const Seat = db.seat;
