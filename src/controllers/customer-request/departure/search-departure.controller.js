@@ -99,19 +99,15 @@ exports.searchdeparture = (req,res) => {
           })
           .then(unbookedSeats => {
               // Calculer le nombre de places disponibles pour ce départ
-              
               const availableSeats = unbookedSeats.length;
-              
               // Ajouter le nombre de places disponibles à l'objet départ
               departure.availableSeats = availableSeats;
-  
               return {
                 departure: departure,
                 availableSeats: availableSeats
             };
           });
   });
-  
   // Exécution de toutes les promesses en parallèle
   return Promise.all(promises);
   })

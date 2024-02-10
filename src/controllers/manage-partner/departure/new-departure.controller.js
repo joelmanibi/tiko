@@ -7,6 +7,7 @@ exports.NewDeparture =  (req,res) => {
   const idTrip = req.body.idTrip;
   const idTypeDeparture = req.body.idTypeDeparture;
   const departureHour = req.body.departureHour;
+  const arrivalTime = req.body.arrivalTime;
 
   // Vérifiez si departureDayIds est un tableau
   if (Array.isArray(departureDayIds)) {
@@ -18,6 +19,7 @@ exports.NewDeparture =  (req,res) => {
         idTrip: idTrip,
         idTypeDeparture: idTypeDeparture,
         departureHour: departureHour,
+        arrivalTime:arrivalTime,
         idBus : 1
       })
         .then((result) => {
