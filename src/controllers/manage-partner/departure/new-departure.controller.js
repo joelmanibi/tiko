@@ -21,8 +21,7 @@ exports.NewDeparture =  (req,res) => {
         departureHour: departureHour,
         arrivalTime:arrivalTime,
         idBus : 1
-      })
-        .then((result) => {
+      }).then((result) => {
           console.log(`Départ enregistré pour le jour ${dayId}.`);
         })
         .catch((error) => {
@@ -33,4 +32,5 @@ exports.NewDeparture =  (req,res) => {
     res.status(200).send({message:"Enregistrement des départs terminé"});
   } else {
     res.status(400).send({message:"Le champ departureDayId doit être un tableau."});
-  }}
+  }
+}
